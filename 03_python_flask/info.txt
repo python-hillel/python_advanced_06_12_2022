@@ -1,0 +1,53 @@
+HTTP
+SQL
+Flask
+
+
+HTTP - Hyper Text Transport Protocol (HTTPS)
+FTP
+
+https://github.com:12345/python-hillel/python_advanced_06_12_2022
+
+https://www.google.com/search?q=python+test&oq=python+test&aqs=chrome..69i57j35i39j0i512l4j69i60l2.4399j0j1&client=ubuntu&sourceid=chrome&ie=UTF-8
+
+request ----> server
+server -----> response
+
+REQUEST
+starting line:  GET, route, version
+header
+body
+
+GET /search HTTP/1.1
+Host: www.google.com
+
+RESPONSE
+starting line:  version code status
+header
+body
+
+HTTP/1.1    200     OK
+Data: Mon, 02 Jan 2011 23:34:59
+
+
+Methods:
+    GET
+    HEAD
+    POST
+    PUT
+    PATH
+    DELETE
+
+
+Code:
+    100 - 199
+    200 - 299       200 204
+    300 - 399
+    400 - 499       404 Page not found
+    500 - 599       500 Internal Error
+
+Headers:
+    1. General Headers
+    2. Request Headers
+    3. Response Heders
+    4. Entity Headers

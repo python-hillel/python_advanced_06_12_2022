@@ -1,4 +1,4 @@
-a = 'Testing ' \
+aaa = 'Testing ' \
     'the ' \
     'long ' \
     'string ' \
@@ -19,7 +19,7 @@ c = """SELECT *
   FROM table
  WHERE field1 = 'Python';"""
 
-print('"' + a + '"')
+print('"' + aaa + '"')
 print('"' + b + '"')
 print(c)
 
