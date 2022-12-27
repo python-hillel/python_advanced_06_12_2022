@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Library - {{ title }}</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td width="150px"><strong>Flask Library</strong></td>
+            <td width="100px"><a href="/">Home</a></td>
+            <td width="130px"><a href="/book/list">Book list</a></td>
+            <td width="100px"><a href="/book/create">Create book</a></td>
+        </tr>
+    </table>
+    <hr>
+    <h1>{{ title }}</h1>
+    {% for book in books %}
+        <a href="/book/detail/{{ book[0] }}">"{{ book[1] }}" - {{ book[2] }}<br></a>
+    {% endfor %}
+</body>
+</html>

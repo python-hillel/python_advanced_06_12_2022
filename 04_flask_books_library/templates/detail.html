@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Library - {{ title }}</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td width="150px"><strong>Flask Library</strong></td>
+            <td width="100px"><a href="/">Home</a></td>
+            <td width="130px"><a href="/book/list">Book list</a></td>
+            <td width="100px"><a href="/book/create">Create book</a></td>
+        </tr>
+    </table>
+    <hr>
+    <h1>{{ title }}</h1>
+    <h2>{{ book[1] }}</h2>
+    <span>{{ book[3] }}</span>
+    <p>Author: {{ book[2] }}</p>
+    <a href="/book/list">Back to list</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="/book/update/{{ book[0] }}">Update</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="/book/delete/{{ book[0] }}">Delete</a>
+</body>
+</html>

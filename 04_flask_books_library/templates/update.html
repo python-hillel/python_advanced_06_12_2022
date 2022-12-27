@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Library - {{ title }}</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td width="150px"><strong>Flask Library</strong></td>
+            <td width="100px"><a href="/">Home</a></td>
+            <td width="130px"><a href="/book/list">Book list</a></td>
+            <td width="100px"><a href="/book/create">Create book</a></td>
+        </tr>
+    </table>
+    <hr>
+    <h1>{{ title }}</h1>
+    <form method="post">
+        <p>
+            <label for="title_id">Title</label>
+            <input id="title_id" name="title" type="text" value="{{ request.form['title'] or book[1] }}">
+        </p>
+        <p>
+            <label for="author_id">Author</label>
+            <input id="author_id" name="author" type="text" value="{{ request.form['author'] or book[2] }}">
+        </p>
+        <p>
+            <input type="submit" value="Update">
+        </p>
+    </form>
+</body>
+</html>
