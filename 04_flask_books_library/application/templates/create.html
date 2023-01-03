@@ -16,12 +16,23 @@
     <hr>
     <h1>{{ title }}</h1>
     <form method="post">
+        {{ form.hidden_tag() }}
         <p>
-            Are you want to remove book "{{ book[2] }}"?
+            {{ form.title.label }}
+            {{ form.title(size=50) }}
+            {% for error in form.title.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
         </p>
         <p>
-            <input type="submit" value="Delete">
-            <a href="/book/detail/{{ book[0] }}">Cancel</a>
+            {{ form.author.label }}
+            {{ form.author(size=50) }}
+            {% for error in form.author.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.submit() }}
         </p>
     </form>
 </body>

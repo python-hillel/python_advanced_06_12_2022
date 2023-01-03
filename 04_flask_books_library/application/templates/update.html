@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Library - {{ title }}</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td width="150px"><strong>Flask Library</strong></td>
+            <td width="100px"><a href="{{ url_for('index') }}">Home</a></td>
+            <td width="130px"><a href="{{ url_for('read_books') }}">Book list</a></td>
+            <td width="100px"><a href="{{ url_for('create') }}">Create book</a></td>
+        </tr>
+    </table>
+    <hr>
+    <h1>{{ title }}</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.title.label }}
+            {{ form.title(size=50) }}
+            {% for error in form.title.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.author.label }}
+            {{ form.author(size=50) }}
+            {% for error in form.author.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+</body>
+</html>

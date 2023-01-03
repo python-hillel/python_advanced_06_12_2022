@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Library - {{ title }}</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td width="150px"><strong>Flask Library</strong></td>
+            <td width="100px"><a href="{{ url_for('index') }}">Home</a></td>
+            <td width="130px"><a href="{{ url_for('read_books') }}">Book list</a></td>
+            <td width="100px"><a href="{{ url_for('create') }}">Create book</a></td>
+        </tr>
+    </table>
+    <hr>
+    <h1>{{ title }}</h1>
+    <h2>{{ book.title }}</h2>
+    <span>{{ book.created }}</span>
+    <p>Author: {{ book.author }}</p>
+    <a href="{{ url_for('read_books') }}">Back to list</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="{{ url_for('update', pk=book.id) }}">Update</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="{{ url_for('delete', pk=book.id) }}">Delete</a>
+</body>
+</html>

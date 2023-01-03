@@ -15,8 +15,15 @@
     </table>
     <hr>
     <h1>{{ title }}</h1>
-    {% for book in books %}
-        <a href="/book/detail/{{ book[0] }}">"{{ book[1] }}" - {{ book[2] }}<br></a>
-    {% endfor %}
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            Are you want to remove book "{{ book.title }}"?
+        </p>
+        <p>
+            {{ form.submit() }}
+            <a href="{{ url_for('detail', pk=book.id) }}">Cancel</a>
+        </p>
+    </form>
 </body>
 </html>
