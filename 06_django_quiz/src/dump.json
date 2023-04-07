@@ -1,0 +1,1037 @@
+[
+{
+   "model": "quiz.exam",
+   "pk": 2,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.421Z",
+      "update_timestamp": "2023-03-17T14:25:52.422Z",
+      "uuid": "e5931883-9047-433e-879e-952b56da70a6",
+      "title": "Простий тест по Хімії",
+      "description": "Тест основанний базових знанях 9-11 классів.",
+      "level": 0
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.641Z",
+      "update_timestamp": "2023-03-17T15:37:47.641Z",
+      "uuid": "dc9c1deb-8a9f-4d27-99ae-76fb58f05c98",
+      "title": "Складний тест на знання об півасіке.",
+      "description": "",
+      "level": 2
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 8,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.422Z",
+      "update_timestamp": "2023-03-17T15:07:36.004Z",
+      "exam": 2,
+      "order_num": 1,
+      "text": "Оберіть основні класси хімічних речовин.",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 9,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.423Z",
+      "update_timestamp": "2023-03-17T15:20:04.688Z",
+      "exam": 2,
+      "order_num": 2,
+      "text": "Оберіть правильне твердження. Оксиди - це...",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 10,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.423Z",
+      "update_timestamp": "2023-03-17T15:23:02.196Z",
+      "exam": 2,
+      "order_num": 3,
+      "text": "Оберіть правильне твердження. Луги - це...",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 11,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.423Z",
+      "update_timestamp": "2023-03-17T15:18:26.605Z",
+      "exam": 2,
+      "order_num": 4,
+      "text": "Оберіть правильне твердження. Кислоти - це...",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 12,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.423Z",
+      "update_timestamp": "2023-03-17T15:16:32.319Z",
+      "exam": 2,
+      "order_num": 5,
+      "text": "Оберіть правильне твердження. Солі - це...",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 13,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.424Z",
+      "update_timestamp": "2023-03-17T15:09:41.240Z",
+      "exam": 2,
+      "order_num": 6,
+      "text": "Оберіть правильну відповідь. Яка валентність елементів у сполуці Fe3O4.",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 14,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.424Z",
+      "update_timestamp": "2023-03-17T15:07:17.889Z",
+      "exam": 2,
+      "order_num": 7,
+      "text": "Оберіть правилюну відповідь. Яка з цих основ є самою сильною?",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 15,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.424Z",
+      "update_timestamp": "2023-03-17T15:06:13.130Z",
+      "exam": 2,
+      "order_num": 8,
+      "text": "Оберіть правилюну відповідь. Яка з цих кислот є самою сильною?",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 16,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.425Z",
+      "update_timestamp": "2023-03-17T15:04:42.793Z",
+      "exam": 2,
+      "order_num": 9,
+      "text": "Оберіть правильну відповідь. Яка сіль утвориться у цій реакції: Cr2(SO4)3 + Cu ->",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 17,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.425Z",
+      "update_timestamp": "2023-03-17T15:05:34.864Z",
+      "exam": 2,
+      "order_num": 10,
+      "text": "Виберіть варіанти, де пройде хімічна реакція:",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 18,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.425Z",
+      "update_timestamp": "2023-03-17T14:58:20.608Z",
+      "exam": 2,
+      "order_num": 11,
+      "text": "Укажіть послідовність реагентів у ланцюжку перетворень: Ni -> NiO -> NISO4 -> Ni(OH)2",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 19,
+   "fields": {
+      "create_timestamp": "2023-03-17T14:25:52.426Z",
+      "update_timestamp": "2023-03-17T14:50:40.834Z",
+      "exam": 2,
+      "order_num": 12,
+      "text": "Якщо змішати розчин, що містить 49 г сульфатної кислоти, з розчином, в якому міститься 20 г натрій гідроксиду яка буда масса солі..",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 20,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.642Z",
+      "update_timestamp": "2023-03-17T15:39:17.470Z",
+      "exam": 3,
+      "order_num": 1,
+      "text": "Яке пиво отримало титул <<Риганина>> у простонароді?",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 21,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.643Z",
+      "update_timestamp": "2023-03-17T15:40:07.457Z",
+      "exam": 3,
+      "order_num": 2,
+      "text": "Це пиво заробило назву у честь Чорнобиля.",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 22,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.643Z",
+      "update_timestamp": "2023-03-17T15:40:46.712Z",
+      "exam": 3,
+      "order_num": 3,
+      "text": "Це пиво як лотерея, може мати гарний смак, а може мати смак як горілка.",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 23,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.644Z",
+      "update_timestamp": "2023-03-17T15:41:27.256Z",
+      "exam": 3,
+      "order_num": 4,
+      "text": "Цей півас має саму лояльну ціну та більш менш гарний смак за ці гроші.",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 24,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.644Z",
+      "update_timestamp": "2023-03-17T15:42:34.225Z",
+      "exam": 3,
+      "order_num": 5,
+      "text": "Який півас з перелічених по смаку схожий на hoegaarden та є дешевшим за нього?",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 25,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.644Z",
+      "update_timestamp": "2023-03-17T15:43:50.327Z",
+      "exam": 3,
+      "order_num": 6,
+      "text": "Ця марка пива має один з найсмачніших рецептів темного пива.",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 26,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.645Z",
+      "update_timestamp": "2023-03-17T15:44:58.295Z",
+      "exam": 3,
+      "order_num": 7,
+      "text": "Де у світі роблять найсмачніше пиво?",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 27,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.645Z",
+      "update_timestamp": "2023-03-17T15:46:32.338Z",
+      "exam": 3,
+      "order_num": 8,
+      "text": "Чоми коли випив 7 келихів пива то у туалеті виссав 10?",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 28,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.645Z",
+      "update_timestamp": "2023-03-17T15:48:52.525Z",
+      "exam": 3,
+      "order_num": 9,
+      "text": "Як у народі називають ці тари 1л, 1.5л, 2л, 3л.",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 29,
+   "fields": {
+      "create_timestamp": "2023-03-17T15:37:47.646Z",
+      "update_timestamp": "2023-03-17T15:49:47.155Z",
+      "exam": 3,
+      "order_num": 10,
+      "text": "Яке пиво має більше смаку, покупне у тарі чи розливне?",
+      "image": "False"
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 10,
+   "fields": {
+      "question": 8,
+      "text": "Оксиди, Метали, Кислоти, Луги",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 11,
+   "fields": {
+      "question": 8,
+      "text": "Оксиди, Луги, Піроксиди, Кислоти",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 12,
+   "fields": {
+      "question": 8,
+      "text": "Оксиди, Луги, Кислоти, Солі",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 13,
+   "fields": {
+      "question": 8,
+      "text": "Оксиди, Солі, Органічні кислоти, Метали",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 14,
+   "fields": {
+      "question": 19,
+      "text": "20г",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 15,
+   "fields": {
+      "question": 19,
+      "text": "60г",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 16,
+   "fields": {
+      "question": 19,
+      "text": "32г",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 17,
+   "fields": {
+      "question": 19,
+      "text": "71г",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 18,
+   "fields": {
+      "question": 18,
+      "text": "CO2, H2SO4, NaOH",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 19,
+   "fields": {
+      "question": 18,
+      "text": "O2, H2SO4, NaOH",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 20,
+   "fields": {
+      "question": 18,
+      "text": "O2, Fe2(SO4)3, O2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 21,
+   "fields": {
+      "question": 18,
+      "text": "CuO, Na2SO4, H2O",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 22,
+   "fields": {
+      "question": 17,
+      "text": "Cu + NaOh ->",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 23,
+   "fields": {
+      "question": 17,
+      "text": "FeCl3 + NaCl + H2O ->",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 24,
+   "fields": {
+      "question": 17,
+      "text": "ZnSO3 + O2 ->",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 25,
+   "fields": {
+      "question": 17,
+      "text": "NaOH + Mg(NO3)2 ->",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 26,
+   "fields": {
+      "question": 16,
+      "text": "CuSO4",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 27,
+   "fields": {
+      "question": 16,
+      "text": "CuSO3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 28,
+   "fields": {
+      "question": 16,
+      "text": "CuS",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 29,
+   "fields": {
+      "question": 16,
+      "text": "Хімічна реакція не пройде",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 30,
+   "fields": {
+      "question": 17,
+      "text": "Усі реакції не пройдуть",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 31,
+   "fields": {
+      "question": 15,
+      "text": "HS",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 32,
+   "fields": {
+      "question": 15,
+      "text": "HCl",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 33,
+   "fields": {
+      "question": 15,
+      "text": "HNO3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 34,
+   "fields": {
+      "question": 15,
+      "text": "H3PO4",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 35,
+   "fields": {
+      "question": 14,
+      "text": "LiOH",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 36,
+   "fields": {
+      "question": 14,
+      "text": "NaOH",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 37,
+   "fields": {
+      "question": 14,
+      "text": "CsOH",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 38,
+   "fields": {
+      "question": 14,
+      "text": "Ba(OH)2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 39,
+   "fields": {
+      "question": 13,
+      "text": "Fe(3) O(2)",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 40,
+   "fields": {
+      "question": 13,
+      "text": "Fe(2) Fe(3) O(2)",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 41,
+   "fields": {
+      "question": 13,
+      "text": "Fe(1.5) O(2)",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 42,
+   "fields": {
+      "question": 13,
+      "text": "Fe(2) Fe(3)  O(1)",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 43,
+   "fields": {
+      "question": 12,
+      "text": "Со́лі — хімічні речовини іонної будови, до складу яких входять кислотні залишки , поєднані з металами  різного походження.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 44,
+   "fields": {
+      "question": 12,
+      "text": "Солі - хімічні речовини іонної будови, до складу яких входять не метали.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 45,
+   "fields": {
+      "question": 12,
+      "text": "Солі - хімічні речовини іонної будови до складу яких входять катіони неметалів, та аніони.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 46,
+   "fields": {
+      "question": 11,
+      "text": "Кислоти - хімічні речовини іонної будови які складаються з металів та кислотного залишку.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 47,
+   "fields": {
+      "question": 11,
+      "text": "Кислоти - хімічні речовини що складаються з іонів водню та кислотного залишку.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 48,
+   "fields": {
+      "question": 11,
+      "text": "Кислоти - хімічні речовини які складаються з водню та катіонв.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 49,
+   "fields": {
+      "question": 9,
+      "text": "Оксиди - хімічні речовини які складаються з металу та неметалу.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 50,
+   "fields": {
+      "question": 9,
+      "text": "Оксиди - хімічні речовини які утворються з неметалу та оксигену.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 51,
+   "fields": {
+      "question": 9,
+      "text": "Оксиди - хімічні речовини які складаються з металу та неметалута і оксиду.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 52,
+   "fields": {
+      "question": 10,
+      "text": "Луги - хімічні речовини що складаються з неметала та гідросиду",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 53,
+   "fields": {
+      "question": 10,
+      "text": "Луги - це хімічні речовини які складаються з металута гідроксиду.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 54,
+   "fields": {
+      "question": 10,
+      "text": "Луги - хімічні речовини що складаються з аніонів та гідроксиду",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 55,
+   "fields": {
+      "question": 20,
+      "text": "Рогань",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 56,
+   "fields": {
+      "question": 20,
+      "text": "Чернігів",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 57,
+   "fields": {
+      "question": 20,
+      "text": "Біла ніч",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 58,
+   "fields": {
+      "question": 20,
+      "text": "Львівське",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 59,
+   "fields": {
+      "question": 21,
+      "text": "Темна ніч",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 60,
+   "fields": {
+      "question": 21,
+      "text": "Чернігівське",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 61,
+   "fields": {
+      "question": 21,
+      "text": "Чорнобильске",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 62,
+   "fields": {
+      "question": 21,
+      "text": "Львівське",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 63,
+   "fields": {
+      "question": 22,
+      "text": "Чернігівське",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 64,
+   "fields": {
+      "question": 22,
+      "text": "Мікулиньске",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 65,
+   "fields": {
+      "question": 22,
+      "text": "Тетерів",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 66,
+   "fields": {
+      "question": 22,
+      "text": "Львівське",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 67,
+   "fields": {
+      "question": 23,
+      "text": "Темна ніч",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 68,
+   "fields": {
+      "question": 23,
+      "text": "Мікулиньске",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 69,
+   "fields": {
+      "question": 23,
+      "text": "Смажений орк",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 70,
+   "fields": {
+      "question": 23,
+      "text": "Львівське",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 71,
+   "fields": {
+      "question": 24,
+      "text": "Темна ніч",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 72,
+   "fields": {
+      "question": 24,
+      "text": "Уманьське",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 73,
+   "fields": {
+      "question": 24,
+      "text": "Перша броварня",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 74,
+   "fields": {
+      "question": 24,
+      "text": "Старий Харків",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 75,
+   "fields": {
+      "question": 25,
+      "text": "Бойові кабани",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 76,
+   "fields": {
+      "question": 25,
+      "text": "Козел",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 77,
+   "fields": {
+      "question": 25,
+      "text": "Hoegaarden",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 78,
+   "fields": {
+      "question": 25,
+      "text": "Оболонь",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 79,
+   "fields": {
+      "question": 26,
+      "text": "Львів",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 80,
+   "fields": {
+      "question": 26,
+      "text": "Умань",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 81,
+   "fields": {
+      "question": 26,
+      "text": "Чернігів",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 82,
+   "fields": {
+      "question": 26,
+      "text": "Баварія",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 83,
+   "fields": {
+      "question": 27,
+      "text": "Тому що півас як чай мочу гоняє.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 84,
+   "fields": {
+      "question": 27,
+      "text": "Тому що півас порошковий",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 85,
+   "fields": {
+      "question": 27,
+      "text": "Бо треба пити норм півас",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 86,
+   "fields": {
+      "question": 27,
+      "text": "Навіщо ссати в келехи?",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 87,
+   "fields": {
+      "question": 28,
+      "text": "Літруха, Полторашка,  Двойнуха, Балон",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 88,
+   "fields": {
+      "question": 28,
+      "text": "Літруха, Полторашка, Балон, Цицька",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 89,
+   "fields": {
+      "question": 28,
+      "text": "Чакушка, Нульсьомий, Напосашок, Вгімно",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 90,
+   "fields": {
+      "question": 28,
+      "text": "Літрушешчка, Балон, Цицька, Динька",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 91,
+   "fields": {
+      "question": 29,
+      "text": "Звісно покупне.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 92,
+   "fields": {
+      "question": 29,
+      "text": "Звісно розливне.",
+      "is_correct": true
+   }
+}
+]

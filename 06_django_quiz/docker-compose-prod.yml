@@ -1,0 +1,66 @@
+version: "3.9"
+
+name: 'quiz'
+
+services:
+  web:
+    container_name: web
+    image: nkiseev/web:0.0.1
+    command: gunicorn core.wsgi:application --workers 4 --bind 0.0.0.0:8890
+    volumes:
+      - static_volume:/opt/src/static
+      - media_volume:/opt/src/media
+    env_file:
+      - .env_prod
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: curl --fail -s http://localhost:8890 || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: always
+
+  db:
+    container_name: db
+    image: nkiseev/db:0.0.1
+    volumes:
+      - db_data_volume:/var/lib/postgresql/data/
+    env_file:
+      - .env_prod
+    healthcheck:
+      test: ["CMD", "pg_isready", "-q", "-d", "quiz", "-U", "terminator"]
+      interval: 30s
+      timeout: 2s
+      retries: 5
+    restart: always
+
+  nginx:
+    container_name: nginx
+    image: nkiseev/nginx:0.0.1
+    volumes:
+      - static_volume:/opt/src/static
+      - media_volume:/opt/src/media
+    ports:
+      - "80:80"
+    depends_on:
+      db:
+        condition: service_healthy
+      web:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "/usr/src/healthcheck.sh"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: always
+
+
+volumes:
+  db_data_volume:
+    name: quiz_data
+  static_volume:
+    name: quiz_static
+  media_volume:
+    name: quiz_media

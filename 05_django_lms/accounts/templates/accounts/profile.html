@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_filters %}
+
+{% block title %}
+User profile
+{% endblock %}
+
+{% block content %}
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <div class="img-circle.vert">
+                    <img class="rounded-circle p1 m1" width="200" height="200"
+                         src="{{ user.profile.avatar.url }}" alt="avatar">
+                </div>
+                <div class="p-3 m-3">
+                    <h2 class="account-heading">{{ user.last_name }} {{ user.first_name }}</h2>
+                    <p class="text-secondary">{{ user.email }}</p>
+                </div>
+                <ul class="list-group list-group-flash">
+                    <li class="list-group-item"><span class="h5">Username: </span>{{ user.username }}</li>
+                    <li class="list-group-item">
+                        <span class="h5">Birthday: </span>
+                        {% if user.profile.birthday %}{{ user.profile.birthday }}{% endif %}
+                    </li>
+                    <li class="list-group-item">
+                        <span class="h5">City: </span>
+                        {% if user.profile.city %}{{ user.profile.city }}{% endif %}
+                    </li>
+                </ul>
+                <div class="text-center mt-5">
+                    <a class="btn btn-outline-primary" href="{% url 'home' %}">Back to home</a>
+                    <a class="btn btn-outline-primary" href="{% url 'accounts:profile_update' %}">Edit profile</a>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+{% endblock %}

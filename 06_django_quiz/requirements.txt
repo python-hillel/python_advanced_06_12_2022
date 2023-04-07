@@ -1,0 +1,9 @@
+celery
+crispy-bootstrap5
+django
+Pillow
+python-dotenv
+psycopg2
+gunicorn
+prettytable
+redis==4.5.4

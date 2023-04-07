@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Details of exam
+{% endblock %}
+
+{% block header %}
+    Exam: {{ exam.title }}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Description</td>
+                            <td>{{ exam.description }}</td>
+                        </tr>
+                        <tr>
+                            <td>Count of questions</td>
+                            <td>{{ exam.questions.count }}</td>
+                        </tr>
+                        <tr>
+                            <td>Count of runs</td>
+                            <td>{{ exam.results.count }}</td>
+                        </tr>
+                        <tr>
+                            <td>The best result</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>The best user</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Last run</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="row">
+            <form method="post"
+                  class="d-flex justify-content-center mt-1 mb-2"
+                  action="{% url 'quiz:result_create' exam.uuid %}">
+                {% csrf_token %}
+                <input class="btn btn-outline-success m-3" type="submit" value="START">
+                <a class="btn btn-outline-primary m-3" href="{% url 'quiz:list' %}">Back to list</a>
+            </form>
+        </div>
+        <div class="row">
+{#            {% if result_list %}#}
+            {% if object_list %}
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <th></th>
+                        <th>Start date</th>
+                        <th>Points</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+{#                    {% for result in result_list %}#}
+                    {% for result in object_list %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ result.create_timestamp|date:'d-m-Y H:i' }}</td>  {# |date:'d-m-Y H:i' #}
+                        <td>HA</td>
+                        <td>{{ result.get_state_display }}</td>
+                        <td>
+                            {% if result.state == result.STATE.NEW %}
+                                <a class="btn btn-outline-warning" href="{% url 'quiz:result_update' exam.uuid result.uuid %}">
+                                    Continue
+                                </a>
+                                <a class="btn btn-outline-danger" href="#">
+                                    Remove
+                                </a>
+                            {% else %}
+                                <a class="btn btn-outline-success" href="{% url 'quiz:result_details' exam.uuid result.uuid %}">
+                                    View
+                                </a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            {% endif %}
+        </div>
+        {% if is_paginated %}
+            <div class="row content-center">
+                {% include 'includes/paginator.html' %}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_filters %}
+
+{% block title %}
+Sign In
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col">
+            <div class="text-center">
+                <a href="{% url 'home' %}" class="btn btn-outline-primary">Home</a>
+                <a href="{% url 'accounts:login' %}" class="btn btn-outline-primary">SignIn</a>
+                <a href="{% url 'accounts:register' %}" class="btn btn-outline-primary">SignUp</a>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_filters %}
+
+{% block title %}
+Update profile
+{% endblock %}
+
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                {{ user_form|crispy }}
+                {{ profile_form|crispy }}
+                <div class="text-center mt-5">
+                    <a class="btn btn-outline-primary" href="{% url 'accounts:profile' %}">Back</a>
+                    <input class="btn btn-outline-primary" type="submit" value="Update">
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </form>
+{% endblock %}

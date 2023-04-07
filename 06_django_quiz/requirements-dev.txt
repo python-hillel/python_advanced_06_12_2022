@@ -1,0 +1,8 @@
+-r requirements.txt
+
+django-extensions
+flake8
+flake8-builtins
+flake8-import-order
+ipython
+pep8-naming

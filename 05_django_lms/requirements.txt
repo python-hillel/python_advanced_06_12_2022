@@ -1,0 +1,15 @@
+crispy-bootstrap5==0.7
+Django==4.1.7
+django-extensions==3.2.1
+django-filter==22.1
+django_debug_toolbar==3.8.1
+Faker==17.6.0
+flake8==6.0.0
+flake8-builtins==2.1.0
+flake8-import-order==0.18.2
+flake8-polyfill==1.0.2
+ipython==8.11.0
+pep8-naming==0.13.3
+Pillow==9.4.0
+python-dotenv==1.0.0
+webargs==8.2.0

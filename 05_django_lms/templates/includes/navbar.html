@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">LMS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Student
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'students:list' %}">List</a></li>
+                        {%  if user.is_authenticated %}
+                            <li><a class="dropdown-item" href="{% url 'students:create' %}">Create</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Group
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'groups:list' %}">List</a></li>
+                        {%  if user.is_authenticated %}
+                            <li><a class="dropdown-item" href="{% url 'groups:create' %}">Create</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            {%  if user.is_authenticated %}
+                                {{ user.username }}
+                            {% else %}
+                                No name
+                            {% endif %}
+                        </a>
+                        <ul class="dropdown-menu">
+                            {%  if user.is_authenticated %}
+                                <li><a class="dropdown-item" href="{% url 'accounts:profile' %}">Profile</a></li>
+                                <li><a class="dropdown-item" href="{% url 'password_change' %}">Password change</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{% url 'accounts:logout' %}">SignOut</a></li>
+                            {% else %}
+                                <li><a class="dropdown-item" href="{% url 'accounts:register' %}">SignUp</a></li>
+                                <li><a class="dropdown-item" href="{% url 'accounts:login' %}">SignIn</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{% url 'password_reset' %}">Password reset</a></li>
+                            {% endif %}
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
